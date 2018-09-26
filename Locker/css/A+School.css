@@ -1,0 +1,75 @@
+h1 {
+	font-family: Arial;
+	color: Red;
+	text-align: Center;
+	font-size: 80px;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
+
+#logo {
+	padding-top: 5px;
+	padding-bottom: 50px;
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+
+h3 {
+	padding-top: -10px;
+	margin-top: -70px;
+	font-family: Arial;
+	text-align: Center;
+}
+
+h2 {
+	text-align: Center;
+	font-family: Arial;
+	font-size: 35px
+}
+
+#realize {
+	padding-top: 15px;
+	padding-left: 60px;
+}
+
+.nlast {
+	padding-bottom: 30px;
+}
+
+#t {
+	text-align: Left;
+}
+
+a:hover {
+	background-color: rgb(237, 243, 255);
+	opacity: 0.5;
+}
+
+img:hover {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+
+.tab {
+	font-family: Arial;
+	font-size: 15px;
+	color: rgb(51, 102, 187);
+	text-decoration: none;
+}
+
+.tab:hover {
+	text-decoration: underline;
+}
+
+.tot {
+	text-decoration: none;
+	color: black;
+	background-color: transparent;
+}
+
+p {
+	text-align: Center;
+}

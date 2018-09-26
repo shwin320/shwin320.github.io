@@ -1,0 +1,100 @@
+h1 {
+	text-align: Center;
+	color: rgb(24, 76, 125);
+	font-family: Arial;
+	font-size: 60px;
+}
+
+h2 {
+	text-align: Center;
+	font-family: Arial;
+	color: rgb(24, 76, 125);
+}
+
+#subtitle {
+	margin-top: -40;
+}
+
+#logo {
+	display: block;
+	margin: 0 auto;
+}
+
+#submit {
+	background-color: blue;
+	border: none;
+	color: white;
+	padding: 10px 27px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	margin-top: 10px;
+}
+
+p {
+	font-family: Arial;
+	color: rgb(24, 76, 125);
+}
+
+h3 {
+	font-family: Arial;
+	font-size: 30px;
+}
+
+.text {
+	padding: 5px 10px;
+}
+
+h4 {
+	font-family: Arial;
+	font-size: 20px;
+	margin-top: -15px;
+}
+
+a:hover {
+	text-decoration: underline;
+	background-color: rgb(237, 243, 255);
+	opacity: 0.5;
+}
+
+h4:hover {
+	text-decoration: underline;
+	background-color: rgb(237, 243, 255);
+	opacity: 0.5;
+}
+
+.nhover:hover {
+	text-decoration: none;
+	background-color: transparent;
+	color: Black;
+	opacity: 1;
+}
+
+.a {
+	margin-left: 70px;
+}
+
+.I {
+	margin-left: 140px;
+}
+
+.A2 {
+	margin-left: 210px;
+}
+
+a {
+	font-family: Arial;
+	font-size: 15px;
+	color: rgb(51, 102, 187);
+	text-decoration: none;
+	target: _blank;
+}
+
+#a {
+	text-decoration: underline;
+}
+
+#try_again {
+	text-align: Center;
+}
