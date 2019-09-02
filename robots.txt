@@ -1,6 +1,9 @@
 User-agent: *
 Disallow: /
-Disallow: /home
 Disallow: /about
 Disallow: /achievements
 Disallow: /work
+Disallow: /about.html
+Disallow: /achievements.html
+Disallow: /work.html
+Disallow: /index.html
