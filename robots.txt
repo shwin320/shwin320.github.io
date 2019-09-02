@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+Disallow: /home
+Disallow: /about
+Disallow: /achievements
+Disallow: /work
