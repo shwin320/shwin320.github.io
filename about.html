@@ -11,48 +11,80 @@
 
 		gtag('config', 'UA-66265239-3');
 	</script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@4fb532c/Ashwin's%20Website.css">
-	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@2b80595/Ashwin's Website.css">
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+	#home{
+		width: 0px;
+		right: 292.93px;
+	}
+	#about{
+		width: 77.625px;
+		right: 207.3px;
+	}
+	#achieve{
+		width: 0px;
+		right: 85.88px;
+	}
+	#work{
+		width: 0px;
+		right: 8px;
+	}
+	</style>
 </head>
 <body>
 <div id="head">
 	<table id="heading">
 		<tr>
-			<td>
-				<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin%20Thomas.jpg" width="115" height="153" onMouseDown="copyright()">
+			<td >
+				<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Logo.png" height="75">
 			</td>
 			<td>
-				<h1 class="headtext">Ashwin Thomas</h1>
-				<h2 class="headtext">Student, Lower Moreland High School</h2>
+				<h1 id="headtext">Ashwin Thomas</h1>
 			</td>
 		</tr>
-	</span>
 	</table>
 	<ul id="navigation">
-		<li id=><a href="/">Home</a></li>
-		<li id="active"><a href="/about">About Me</a></li>
-		<li id=><a href="/achievements">Achievements</a></li>
-		<li id=><a href="/work">My Work</a></li>
+		<li><a href="home.html" id="nhome" class="inact">Home</a></li>
+		<li><a href="about.html" id="nabout">About Me</a></li>
+		<li><a href="achievements.html" id="nachieve" class="inact">Achievements</a></li>
+		<li><a href="work.html" id="nwork" class="inact">My Work</a></li>
 	</ul>
+	<div class="under" id="home"></div>
+	<div class="under" id="about"></div>
+	<div class="under" id="achieve"></div>
+	<div class="under" id="work"></div>
 </div>
-<h1 id="top" style="font-family: serif; text-align: left; background-image: none; -webkit-background-clip: text; color: black;">A brief history of Ashwin</h1>
+<h1 id="top">About Ashwin</h1>
 <div>
-<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin%20Thomas.jpg" width="115" height="153" onMouseDown="copyright()">
+<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Ashwin%20Thomas.jpg" height="400" onMouseDown="copyright()" alt="Ashwin Thomas">
 <p style="margin-top: 0px; font-weight: bold;">Ashwin Thomas</p>
 </div>
 <ul>
-	<li>Highly advanced student with special interests in STEM (Science, Technology, Engineering, and Math)</li>
-	<li>Recent projects include Late Bus and OneLocker (See <a href="work.html">work</a> tab)</li>
-	<li>Future plans to work in tech industry (See <a href="https://sites.google.com/stu.lmtsd.org/at-careers/all-about-me" target="_blank">Careers Portfolio</a>)</li>
+	<li>Student at Lower Moreland High School</li>
+	<li>Advanced student with interests in STEM (Science, Technology, Engineering, and Math)</li>
+	<li>Amateur web developer</li>
+	<li>Future plans to work in tech industry and become President</li>
 </ul>
+<button onclick="scrollup()" id="scroll" title="Go to top"><p>Go to top</p><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/arrow.png" height=15></button>
 <footer>
-<a href="https://shwin320.github.io"><p style="padding-left: 8px;">Ashwin's Website</p></a>
-<p style="margin-left: 10px; margin-right: 10px;">—</p>
-<a href="mailto:shwin320@gmail.com"><p>Email Ashwin</p></a>
-<p style="margin-left: 10px; margin-right: 10px;">—</p>
-<p>Copyright © 2019-2020 Ashwin Thomas. All Rights Reserved.</p>
-<button onclick="scrollup()" id="scroll" title="Go to top"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/arrow.png" width=40 height=40></button>
+<a href="https://shwin320.github.io" title="Home"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Home.svg" alt="Home" id="hbutton" height=24 style="margin-left:2px; padding-right: 8px;"></a>
+<a href="mailto:shwin320@gmail.com" title="Email Ashwin"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Email.svg" alt="Email Ashwin" id="ebutton" height=24></a>
+<p>Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin's%20Website.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@2b80595/Ashwin's Website.js"></script>
+<script>
+navh.addEventListener("mouseover", underhome);
+navh.addEventListener("mouseout", nunderhome);
+/*
+nava.addEventListener("mouseout", nunderabout);
+nava.addEventListener("mouseover", underabout);
+*/
+navach.addEventListener("mouseover", underachieve);
+navach.addEventListener("mouseout", nunderachieve);
+navw.addEventListener("mouseover", underwork);
+navw.addEventListener("mouseout", nunderwork);
+</script>
 </body>
 </html>
