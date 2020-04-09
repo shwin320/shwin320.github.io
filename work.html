@@ -11,34 +11,55 @@
 
 		gtag('config', 'UA-66265239-3');
 	</script>
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@4fb532c/Ashwin's%20Website.css">
-	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@2b80595/Ashwin's Website.css">
+	<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<style>
+	#home{
+		width: 0px;
+		right: 292.93px;
+	}
+	#about{
+		width: 0px;
+		right: 207.3px;
+	}
+	#achieve{
+		width: 0px;
+		right: 85.88px;
+	}
+	#work{
+		width: 69.875px;
+		right: 8px;
+	}
+	</style>
 </head>
 <body>
 <div id="head">
 	<table id="heading">
 		<tr>
-			<td>
-				<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin%20Thomas.jpg" width="115" height="153" onMouseDown="copyright()">
+			<td >
+				<img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Logo.png" height="75">
 			</td>
 			<td>
-				<h1 class="headtext">Ashwin Thomas</h1>
-				<h2 class="headtext">Student, Lower Moreland High School</h2>
+				<h1 id="headtext">Ashwin Thomas</h1>
 			</td>
 		</tr>
-	</span>
 	</table>
 	<ul id="navigation">
-		<li id=><a href="/">Home</a></li>
-		<li id=><a href="/about">About Me</a></li>
-		<li id=><a href="/achievements">Achievements</a></li>
-		<li id="active"><a href="/work">My Work</a></li>
+		<li><a href="home.html" id="nhome" class="inact">Home</a></li>
+		<li><a href="about.html" id="nabout" class="inact">About Me</a></li>
+		<li><a href="achievements.html" id="nachieve" class="inact">Achievements</a></li>
+		<li><a href="work.html" id="nwork">My Work</a></li>
 	</ul>
+	<div class="under" id="home"></div>
+	<div class="under" id="about"></div>
+	<div class="under" id="achieve"></div>
+	<div class="under" id="work"></div>
 </div>
 <div id="top" class="work">
-<table id="bottom">
+<table>
 	<tr>
-		<td><a href="https://sites.google.com/lmtsd.org/at-eportfolio" target="_blank"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin's%20ePortfolio.jpg"></a></td>
+		<td><a href="https://sites.google.com/lmtsd.org/at-eportfolio" target="_blank"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@d4548ff/Ashwin's ePortfolio.jpg" id="eport"></a></td>
 		<td><h3>Ashwin's ePortfolio</h3><p>This is my student ePortfolio. This site includes some of my school work. There are also links to other websites here that include work in specific areas.</p></td>
 	</tr>
 	<tr>
@@ -64,22 +85,34 @@
 	</tr>
 	<tr>
 		<td><h3>9th Grade PJAS Project - Are Sodas and Carbonated Waters Effective Plant Fertilizers?</h3></td>
-		<td><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyvWiI7I7F2CCWHuITaSTYPFVPCbHYoYhdCVzVzxsYHQNGhdc7GWdlAaXj-uAuUkry2ugIqDx34-7l/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></td>
+		<td><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSyvWiI7I7F2CCWHuITaSTYPFVPCbHYoYhdCVzVzxsYHQNGhdc7GWdlAaXj-uAuUkry2ugIqDx34-7l/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></td>
 	</tr>
 	<tr>
-		<td><h3>PA SEED Environmental Literacy Hackathon Mock App - LCC</h3></td>
+		<td style="width: 293px;"><h3 style="width: 293px;">PA SEED Environmental Literacy Hackathon Mock App - LCC (Made in partnership with Varun Singh, Nihal Bankulla, and David Volchonok)</h3></td>
 		<td><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRUxrW1JAjmBGqqnaOJFjHFPnv10MVMaEuC-PvrJA3vfKjClD5dvYr3z_ZhWPdCSZTcSaATbT-S56lg/embed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></td>
 	</tr>
 </table>
 </div>
+<button onclick="scrollup()" id="scroll" title="Go to top"><p>Go to top</p><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/arrow.png" height=15></button>
 <footer>
-<a href="https://shwin320.github.io"><p style="padding-left: 8px;">Ashwin's Website</p></a>
-<p style="margin-left: 10px; margin-right: 10px;">—</p>
-<a href="mailto:shwin320@gmail.com"><p>Email Ashwin</p></a>
-<p style="margin-left: 10px; margin-right: 10px;">—</p>
-<p>Copyright © 2019-2020 Ashwin Thomas. All Rights Reserved.</p>
-<button onclick="scrollup()" id="scroll" title="Go to top"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/arrow.png" width=40 height=40></button>
+<a href="https://shwin320.github.io" title="Home"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Home.svg" alt="Home" id="hbutton" height=24 style="margin-left:2px; padding-right: 8px;"></a>
+<a href="mailto:shwin320@gmail.com" title="Email Ashwin"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@146e2c4/Email.svg" alt="Email Ashwin" id="ebutton" height=24></a>
+<p>Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website/Ashwin's%20Website.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@2b80595/Ashwin's Website.js"></script>
+<script>
+navh.addEventListener("mouseover", underhome);
+navh.addEventListener("mouseout", nunderhome);
+nava.addEventListener("mouseout", nunderabout);
+nava.addEventListener("mouseover", underabout)
+navach.addEventListener("mouseover", underachieve);
+navach.addEventListener("mouseout", nunderachieve);
+/*
+navw.addEventListener("mouseover", underwork);
+navw.addEventListener("mouseout", nunderwork);
+*/
+darkImgWork(dark);
+dark.addListener(darkImgWork);
+</script>
 </body>
 </html>
