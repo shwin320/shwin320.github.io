@@ -126,7 +126,7 @@
 				$(".logout").on("click", function(e){
 					e.preventDefault();
 					localStorage.clear();
-					window.location.href="login.html";
+					window.location.href="/OneLocker/login";
 				});
 			} else if(localStorage.getItem("user") == "demo"){
 				$("title").html("School — OneLocker");
@@ -205,7 +205,7 @@
 				$(".logout").on("click", function(e){
 					e.preventDefault();
 					localStorage.clear();
-					window.location.href="login.html";
+					window.location.href="/OneLocker/login";
 				});
 			} else if(localStorage.getItem("user") == "lmtsd"){
 				$("title").html("District — OneLocker");
@@ -275,7 +275,7 @@
 				$(".logout").on("click", function(e){
 					e.preventDefault();
 					localStorage.clear();
-					window.location.href="login.html";
+					window.location.href="/OneLocker/login";
 				});
 			};
 			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
