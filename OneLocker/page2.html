@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page2 — OneLocker</title>
+		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/OneLocker.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="home.html">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/logo.png" height="120" style="margin-top: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h1>OneLocker</h1>
+								<br>
+								<h2>Your life, organized</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+			<nav style="position: absolute; right: 8px; bottom: 8px;" id="siteNav">
+			</nav>
+		</header>
+		<div id="content">
+		</div>
+		<footer>
+			<p style="position: absolute; top: 0px; left: 8px; margin: 0px;">Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
+			<nav style="position: absolute; top: 0px; right: 8px;">
+				<a href="https://goo.gl/forms/BKejH4liidhVoJaC3" target="_blank">Sign-up</a>
+				<a href="login.html" class="logout">Logout</a>
+				<a href="mailto:shwin320@gmail.com?subject=OneLocker Help Request" target="_blank">Get Help</a>
+			</nav>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Dark%20Mode.js"></script>
+		<script>
+			if(localStorage.getItem("user") != "shwin17MAGD" && localStorage.getItem("user") != "demo" && localStorage.getItem("user") != "lmtsd"){
+				window.location.replace("login.html");
+			} else if(localStorage.getItem("user") == "shwin17MAGD"){
+				$("title").html("School — OneLocker");
+				$("#content").html('\
+				<h1>School</h1>\
+				<div style="width: 750px; margin: 0px 8px 8px 0px;">\
+					<h2>G Suite:</h2>\
+					<span>\
+						<a href="https://classroom.google.com/?authuser=athomas5149@stu.lmtsd.org" target="_blank" title="Google Classroom"><img src="https://lh4.googleusercontent.com/jWBBqrENpBVVCcMOekDOhhn-Zv_nAhWTysQK7zvANbyNd4UDodNlqoPpDE_XRCIpazdf=w300" width=100 height=100 alt="Google Classroom"></a>\
+						<a href="https://drive.google.com/drive/u/?authuser=athomas5149@stu.lmtsd.org" target="_blank" title="Google Drive"><img src="https://lh3.googleusercontent.com/A-jk5o_CT_ucUdRRwmchoeMx1qoKolfGKFptEBHANKZELMmeJALE7m4KOZdDu0NjFNiekH0j2T981f5N_nZ_IU1HsRehKLPRQAX0=h120" width=100 height=100 alt="Google Drive"></a>\
+						<a href="https://meet.google.com/" target="_blank" title="Google Meet"><img src="https://www.gstatic.com/images/branding/product/2x/meet_96dp.png" width=100 height=100 alt="Google Meet"></a>\
+						<a href="https://mail.google.com/mail/u/?authuser=athomas5149@stu.lmtsd.org" target="_blank" title="Gmail"><img src="https://lh3.googleusercontent.com/86N90L0IJ785jaRXwXX0UAycK5MZQ3fTJRaIjgvF2PVJqjw5NkVequXgELwIEAnJG0SRxVUSaa5_Yw1_wW3LrxAN4oNZ8VCoeQuddmI=h120" width=100 height=100 alt="Gmail"></a>\
+						<a href="https://calendar.google.com/calendar/?authuser=athomas5149@stu.lmtsd.org" target="_blank" title="Google Calendar"><img src="https://lh3.googleusercontent.com/Wj2TC83OMCWpHPH9R-ebuLwseO5cPbsoaM8YEx3oRcakA2Ck4OG-SVv9YrYE4arZ_jC2VnImXJdr1xJognMvnmAQcZtdc54vKttQew=h120" width=100 height=100 alt="Google Calander"></a>\
+					</span>\
+				</div>\
+				<div style="width: 350px; margin: 0px 8px 8px 0px;">\
+					<h2>Textbooks:</h2>\
+					<span>\
+						<a href="https://passport.carnegielearning.com/" target="_blank" title="Carnegie Learning"><img src="https://i.vimeocdn.com/portrait/18191102_300x300.webp" width=100 height=100 alt="Carnegie Learning"></a>\
+						<a href="https://wayf.rumba.pk12ls.com/wayf/?service=https://www.savvasrealize.com" target="_blank" title="Savvas Realize"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEMR68Z6LCPEg/company-logo_200_200/0?e=2159024400&v=beta&t=EHibD-PK0HAuw6UHfFgUBhgFxwDkUZ7jh9a-GuxSN0k" width=100 height=100 alt="Savvas Realize"></a>\
+						<a href="https://portal.mypearson.com/portal" target="_blank" title="MyLab Math"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/pearson.png" width=100 height=100 alt="MyLab Math"></a>\
+					</span>\
+				</div>\
+				<div style="width: 650px; margin: 0px 8px 8px 0px;">\
+					<h2>Study Tools:</h2>\
+					<span>\
+						<a href="https://www.khanacademy.org/" target="_blank" title="Khan Academy"><img src="https://avatars0.githubusercontent.com/u/15455?s=200&v=4" width=100 height=100 alt="Khan Academy"></a>\
+						<a href="https://www.youtube.com/user/crashcourse" target="_blank" title="Crash Course"><img src="https://upload.wikimedia.org/wikipedia/en/e/e9/Crash_Course_logo.png" width=100 height=100 alt="Crash Course"></a>\
+						<a href="https://quizlet.com/latest" target="_blank" title="Quizlet"><img src="https://quizlet.com/a/i/brandmark/1024.893fa7e00da6339.png" width=100 height=100 alt="Quizlet"></a>\
+						<a href="https://www.sparknotes.com/" target="_blank" title="SparkNotes"><img src="https://lh3.googleusercontent.com/tGMpDn7vYIDTGnqSCQIzdOpIXdft1hDj8OGBw65Oj8__2nTEUjfwQpROwK7harTCRbE4=s180-rw" width=100 height=100 alt="SparkNotes"></a>\
+						<a href="http://www.edumedia-sciences.com/en/" target="_blank" title="eduMedia"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/eduMedia.png" width=100 height=100 alt="eduMedia"></a>\
+					</span>\
+				</div>\
+				<div style="width: 350px; margin: 0px 8px 8px 0px;">\
+					<h2>Library:</h2>\
+					<span>\
+						<a href="https://sites.google.com/lmtsd.org/lmhs-library/home" target="_blank" title="LMHS Library"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/HSLibrary.gif" width=100 height=100 alt="LMHS Library"></a>\
+						<a href="https://docs.google.com/spreadsheets/d/1QQ0CI7502RT3EffllNL2N7gAnYp4ks4STnkDfAvgSf4/edit" target="_blank" title="Passwords"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/password.svg" id="dPass" width=100 height=100 alt="Passwords"></a>\
+					</span>\
+				</div>\
+				<div style="width: 654.166666666px; margin: 0px 8px 8px 0px;">\
+					<h2>LMTSD:</h2>\
+					<span>\
+						<a href="https://www.lmtsd.org" target="_blank" title="Lower Moreland Township School District"><img src="https://i.vimeocdn.com/portrait/3663763_300x300" width=100 height=100 alt="Lower Moreland Township School District"></a>\
+						<a href="https://www.lmtsd.org/Domain/75" target="_blank" title="Lower Moreland High School"><img src="https://schoolassets.s3.amazonaws.com/logos/2041/2041.gif" width=100 height=100 alt="Lower Moreland High School"></a>\
+						<a href="https://esp41pehac.eschoolplus.powerschool.com/HomeAccess/district/student/lmtsd" target="_blank" title="Home Access Center"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/hac.png" width=104.166666666 height=100 alt="Home Access Center"></a>\
+						<a href="https://www.lmtsd.org/Page/12677" target="_blank" title="Virtual Backpack"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/virtualBackpack.png" width=74.62686567 height=100 alt="Virtual Backpack"></a>\
+						<a href="https://www.lmtsd.org/Domain/126" target="_blank" title="Bell Schedules"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/schedule.svg" id="dSched" width=100 height=100 alt="Bell Schedules"></a>\
+					</span>\
+				</div>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/home.svg" id="dHome" width="24" height="24">Personal</a>\
+				<a href="page2.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
+				<a href="page3.html" width="24" height="24"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/college.svg" id="dColl" width="24" height="24">College</a>\
+				<a href="page4.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/money.svg" id="dMon" width="24" height="24">Money</a>\
+				<a href="page5.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen" width="24" height="24">Agenda</a>\
+				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" width="24" height="24">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+					<nav id="accOpt">\
+						<p>Welcome to your Locker, Ashwin Thomas</p>\
+						<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+					</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+			} else if(localStorage.getItem("user") == "demo"){
+				$("title").html("Agenda — OneLocker");
+				$("#content").html('\
+				<h1>Agenda</h1>\
+				<iframe src="https://docs.google.com/document/d/1PjDKessoCjBfA7esiMfTCXN5bK3o5JPgeZwNEry8SWc/edit?embedded=true&rm=demo" style="width: 80%; height: 390px; display: block; margin: auto; box-shadow: 0px 0px 5px #989595;"></iframe>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
+				<a href="page2.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen">Agenda</a>\
+				<a id="account" width="24" height="24"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" width="24" height="24">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+				<nav id="accOpt">\
+					<p>Welcome to your Locker, Demo Student!</p>\
+					<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+				</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+			} else if(localStorage.getItem("user") == "lmtsd"){
+				$("title").html("Pine Road — OneLocker");
+				$("#content").html('\
+				<h1>Pine Road</h1>\
+				<div style="width: 450px; margin: 0px 8px 8px 0px;">\
+					<h2>Textbooks:</h2>\
+					<span>\
+						<a href="https://accounts.google.com/o/saml2/initsso?idpid=C01p8vbki&spid=1073399322464&forceauthn=false" target="_blank" title="McGraw-Hill Education"><img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/MHE_Logo_RGB.png" width=100 height=100 alt="McGraw-Hill Education"></a>\
+						<a href="https://www-k6.thinkcentral.com/sp/access?sp=tc&connection=lmtsd-org" target="_blank" title="ThinkCentral"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/thinkCenteral.png" width=100 height=100 alt="ThinkCentral"></a>\
+						<a href="https://www.fossweb.com/" target="_blank" title="FOSS Science"><img src="https://yt3.ggpht.com/a/AATXAJwmuxFzmiT0yTEaBLZAUApa_1v9qHDtEkkzwdai=s100-c-k-c0xffffffff-no-rj-mo" width=100 height=100 alt="FOSS Science"></a>\
+					</span>\
+				</div>\
+				<div style="width: 734.699408805px; margin: 0px 8px 8px 0px;">\
+					<h2>Online Resources:</h2>\
+					<span>\
+						<a href="https://student.classdojo.com/" target="_blank" title="Class Dojo"><img src="https://lh3.googleusercontent.com/FUzIQanDvPv3Gl_4qmOWr74en-f16P-WKOeXTEu2LUvIEYvTeZ9USEf4O0FrH8tvCA=s180-rw" width=100 height=100 alt="Class Dojo"></a>\
+						<a href="https://login.i-ready.com/" target="_blank" title="i-Ready"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/iReady.png" width="100" height="100" alt="i-Ready"></a>\
+						<a href="http://www.studyisland.com/" target="_blank" title="Study Island"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/studyIsland.png" id="dIsle" width="100" height="100" alt="Study Island"></a>\
+						<a href="https://www.brainpop.com/" target="_blank" title="BrainPOP"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/brainPop.png" width=100 height=100 alt="BrainPOP"></a>\
+						<a href="https://sites.google.com/lmtsd.org/prlibrary" target="_blank" title="Pine Road Library"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/pineRoadLib.png" width=128.193832599 height=100 alt="Pine Road Library"></a>\
+					</span>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://i.vimeocdn.com/portrait/3663763_300x300" width="30" height="30">District</a>\
+				<a href="page2.html" id="active"><img src="https://www.lmtsd.org/cms/lib/PA01000427/Centricity/Domain/365/PineRoad_logo.png" width="39.64757709" height="30">Pine Road</a>\
+				<a href="page3.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/murrayAve.png" width="45.2873563196" height="30">Murray Ave</a>\
+				<a href="page4.html"><img src="https://schoolassets.s3.amazonaws.com/logos/2041/2041.gif" width="30" height="30">LMHS</a>\
+				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" height="30">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+				<nav id="accOpt">\
+					<p>Welcome to your Locker, LMTSD Students!</p>\
+					<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+				</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+			};
+			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
+			darkImg(isDark);
+			isDark.addListener(darkImg);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page5 — OneLocker</title>
+		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/OneLocker.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="home.html">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/logo.png" height="120" style="margin-top: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h1>OneLocker</h1>
+								<br>
+								<h2>Your life, organized</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+			<nav style="position: absolute; right: 8px; bottom: 8px;" id="siteNav">
+			</nav>
+		</header>
+		<div id="content">
+		</div>
+		<footer>
+			<p style="position: absolute; top: 0px; left: 8px; margin: 0px;">Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
+			<nav style="position: absolute; top: 0px; right: 8px;">
+				<a href="https://goo.gl/forms/BKejH4liidhVoJaC3" target="_blank">Sign-up</a>
+				<a href="login.html" class="logout">Logout</a>
+				<a href="mailto:shwin320@gmail.com?subject=OneLocker Help Request" target="_blank">Get Help</a>
+			</nav>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Dark%20Mode.js"></script>
+		<script>
+			if(localStorage.getItem("user") != "shwin17MAGD" && localStorage.getItem("user") != "demo" && localStorage.getItem("user") != "lmtsd"){
+				window.location.replace("login.html");
+			} else if(localStorage.getItem("user") == "shwin17MAGD"){
+				$("title").html("Agenda — OneLocker");
+				$("#content").html('\
+				<h1>Agenda</h1>\
+				<div style="width: 100%; height: 390px; position: relative; box-shadow: none; background-color: inherit;">\
+					<iframe src="https://docs.google.com/document/d/1C_EIn7SYQXHBECvI45rT4x9c7geET5huVUNC3I2uRaQ/edit?embedded=true&rm=demo" style="width: 80%; height: 100%; display: block; box-shadow: 0px 0px 5px #989595;"></iframe>\
+					<form id="calChange" style="position: absolute; top: 0px; right: 0px; width: 18%">\
+						<h2>Calendar:</h2>\
+						<select>\
+							<option value="1">Personal</option>\
+							<option value="2">School</option>\
+							<option value="3">College</option>\
+						</select>\
+						<input type="submit" value="Select"></input>\
+					</form>\
+				</div>\
+				<div id="calCont" style="position: fixed; top: 100px; height: 460px; width: 90vw; left: 5vw; box-shadow: none; background-color: inherit;">\
+					<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/close.svg" id="dClos" style="position: absolute; top: 0px; right: 0px; height: 18px;" alt="Close">\
+					<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23B39DDB&amp;ctz=America%2FNew_York&amp;src=c2h3aW4zMjBAZ21haWwuY29t&amp;src=ZmFtaWx5MDI0NzIyNjUxNDc4MTI2MTc2NTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%237986CB&amp;color=%23F6BF26&amp;color=%230B8043&amp;showTitle=0&amp;showTz=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0" style="border:solid 1px #777; height: 100%; width: 100%; box-shadow: 0px 0px 5px #989595;" frameborder="0" scrolling="no" id="calP"></iframe>\
+					<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23039BE5&amp;ctz=America%2FNew_York&amp;src=YXRob21hczUxNDlAc3R1LmxtdHNkLm9yZw&amp;src=bG10c2Qub3JnX2pqdHY0YmVuczZva20xZ2l1ODgyYWxxaWZjQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bG10c2Qub3JnX2NsYXNzcm9vbWYxZDA0NjdhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bG10c2Qub3JnX2NsYXNzcm9vbWVmMTNhMzNlQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bG10c2Qub3JnX2NsYXNzcm9vbTk1NTE3M2ZhQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bG10c2Qub3JnX2NsYXNzcm9vbWZkZTUyOTI0QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=bG10c2Qub3JnX2NsYXNzcm9vbTliNjZhMGQ3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&amp;src=ZXBybDVpMWk2a2UzdmhiM3RpajVjNzU0MzZpY2dsajBAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23039BE5&amp;color=%23D81B60&amp;color=%23EF6C00&amp;color=%23202124&amp;color=%23AD1457&amp;color=%234285F4&amp;color=%230B8043&amp;color=%23F6BF26&amp;showTitle=0&amp;showCalendars=0&amp;showTz=0&amp;showTabs=0&amp;showPrint=0&amp;showDate=1" style="border:solid 1px #777; height: 100%; width: 100%; box-shadow: 0px 0px 5px #989595;" frameborder="0" scrolling="no" id="calS"></iframe>\
+					<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23F09300&amp;ctz=America%2FNew_York&amp;src=YXNod2lucHRob21hczNAZ21haWwuY29t&amp;color=%23039BE5&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0" style="border:solid 1px #777; height: 100%; width: 100%; box-shadow: 0px 0px 5px #989595;" frameborder="0" scrolling="no" id="calC"></iframe>\
+				</div>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/home.svg" id="dHome" width="24" height="24">Personal</a>\
+				<a href="page2.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
+				<a href="page3.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/college.svg" id="dColl" width="24" height="24">College</a>\
+				<a href="page4.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/money.svg" id="dMon" width="24" height="24">Money</a>\
+				<a href="page5.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen" width="24" height="24">Agenda</a>\
+				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" width="24" height="24">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+					<nav id="accOpt">\
+						<p>Welcome to your Locker, Ashwin Thomas</p>\
+						<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+					</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+				$("#calCont").hide();
+				$("#calP").hide();
+				$("#calS").hide();
+				$("#calC").hide();
+				$("#calChange").on("submit", function(e){
+				e.preventDefault();
+				$("#calCont").show(1500);
+				if($("#calChange").find("select").val() == "1"){
+					$("#calP").show(1500);
+					$("#calS").hide(1500);
+					$("#calC").hide(1500);
+				} else if($("#calChange").find("select").val() == "2"){
+					$("#calP").hide(1500);
+					$("#calS").show(1500);
+					$("#calC").hide(1500);
+				} else if($("#calChange").find("select").val() == "3"){
+					$("#calP").hide(1500);
+					$("#calS").hide(1500);
+					$("#calC").show(1500);
+				};
+			});
+			$("#dClos").on("click", function(e){
+				$("#calCont").hide(1500);
+				$("#calP").hide(1500);
+				$("#calS").hide(1500);
+				$("#calC").hide(1500);
+			});
+			} else if(localStorage.getItem("user") == "demo"){
+				window.location.replace("home.html");
+			} else if(localStorage.getItem("user") == "lmtsd"){
+				window.location.replace("home.html");
+			};
+			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
+			darkImg(isDark);
+			isDark.addListener(darkImg);
+		</script>
+	</body>
+</html>

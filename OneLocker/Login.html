@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login — OneLocker</title>
+		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/OneLocker.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="home.html">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/logo.png" height="120" style="margin-top: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h1>OneLocker</h1>
+								<br>
+								<h2>Your life, organized</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+		</header>
+		<table style="margin-top: 24px;">
+			<tbody>
+				<tr>
+					<td><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/logo.png"></td>
+					<td>
+						<h2>Login to OneLocker</h2>
+						<form id="login" style="margin-top: 24px;">
+							<input type="text" placeholder="Username" autocomplete="off" class="login" id="user"></input>
+							<br>
+							<input type="password" placeholder="Password" autocomplete="off" class="login" id="pass"></input>
+							<br>
+							<input type="submit" style="background-color: #297ECE; border: 0px; color: white; width: 100px; height: 30px; font-size: 18px; margin-top: 8px;">
+						</form>					
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<footer>
+			<p style="position: absolute; top: 0px; left: 8px; margin: 0px;">Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
+			<nav style="position: absolute; top: 0px; right: 8px;">
+				<a href="https://goo.gl/forms/BKejH4liidhVoJaC3" target="_blank">Sign-up</a>
+				<a href="" target="_blank">Login</a>
+				<a href="mailto:shwin320@gmail.com?subject=OneLocker Help Request" target="_blank">Get Help</a>
+			</nav>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Dark%20Mode.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Login.js"></script>
+		<script>
+			$("#login").on("submit", login);
+			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
+			darkImg(isDark);
+			isDark.addListener(darkImg);
+		</script>
+	</body>
+</html>

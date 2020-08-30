@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Page3 — OneLocker</title>
+		<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/favicon.ico" type="image/x-icon">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/OneLocker.css" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<a href="home.html">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/logo.png" height="120" style="margin-top: 8px;">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h1>OneLocker</h1>
+								<br>
+								<h2>Your life, organized</h2>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</a>
+			<nav style="position: absolute; right: 8px; bottom: 8px;" id="siteNav">
+			</nav>
+		</header>
+		<div id="content">
+		</div>
+		<footer>
+			<p style="position: absolute; top: 0px; left: 8px; margin: 0px;">Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
+			<nav style="position: absolute; top: 0px; right: 8px;">
+				<a href="https://goo.gl/forms/BKejH4liidhVoJaC3" target="_blank">Sign-up</a>
+				<a href="login.html" class="logout">Logout</a>
+				<a href="mailto:shwin320@gmail.com?subject=OneLocker Help Request" target="_blank">Get Help</a>
+			</nav>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Dark%20Mode.js"></script>
+		<script>
+			if(localStorage.getItem("user") != "shwin17MAGD" && localStorage.getItem("user") != "demo" && localStorage.getItem("user") != "lmtsd"){
+				window.location.replace("login.html");
+			} else if(localStorage.getItem("user") == "shwin17MAGD"){
+				$("title").html("College — OneLocker");
+				$("#content").html('\
+				<h1>College</h1>\
+				<div style="width: 450px; margin: 0px 8px 8px 0px;">\
+					<h2>Productivity:</h2>\
+					<span>\
+						<a href="https://mail.google.com/mail/u/?authuser=ashwinpthomas3@gmail.com" target="_blank" title="Gmail"><img src="https://lh3.googleusercontent.com/86N90L0IJ785jaRXwXX0UAycK5MZQ3fTJRaIjgvF2PVJqjw5NkVequXgELwIEAnJG0SRxVUSaa5_Yw1_wW3LrxAN4oNZ8VCoeQuddmI=h120" width=100 height=100 alt="Gmail"></a>\
+						<a href="https://drive.google.com/drive/u/?authuser=ashwinpthomas3@gmail.com" target="_blank" title="Google Drive"><img src="https://lh3.googleusercontent.com/A-jk5o_CT_ucUdRRwmchoeMx1qoKolfGKFptEBHANKZELMmeJALE7m4KOZdDu0NjFNiekH0j2T981f5N_nZ_IU1HsRehKLPRQAX0=h120" width=100 height=100 alt="Google Drive"></a>\
+						<a href="https://calendar.google.com/calendar/?authuser=ashwinpthomas3@gmail.com" target="_blank" title="Google Calendar"><img src="https://lh3.googleusercontent.com/Wj2TC83OMCWpHPH9R-ebuLwseO5cPbsoaM8YEx3oRcakA2Ck4OG-SVv9YrYE4arZ_jC2VnImXJdr1xJognMvnmAQcZtdc54vKttQew=h120" width=100 height=100 alt="Google Calander"></a>\
+					</span>\
+				</div>\
+				<div style="width: 550px; margin: 0px 8px 8px 0px;">\
+					<h2>Drexel:</h2>\
+					<span>\
+						<a href="https://one.drexel.edu/" target="_blank" title="DrexelOne"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/drexel.png" width=100 height=100 alt="DrexelOne"></a>\
+						<a href="https://learn.dcollege.net/ultra/course/" target="_blank" title="Drexel Learn"><img src="https://lh3.googleusercontent.com/dkv3YKx6QFkf1ox4IouqrEAXzR5R71iEQxTfLk30OglO6gVi-2Ck-zwM7h7Ucs0Rmw=s180-rw" width=100 height=100 alt="Drexel Learn"></a>\
+						<a href="http://portal.office.com/" target="_blank" title="Office 365"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Microsoft_Office_logo_%282019%E2%80%93present%29.svg/512px-Microsoft_Office_logo_%282019%E2%80%93present%29.svg.png" width=100 height=100 alt="Office 365"></a>\
+						<a href="https://outlook.office365.com/" target="_blank" title="Outlook"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/outlook.svg" width=100 height=100 alt="Outlook"></a>\
+					</span>\
+				</div>\
+				<div style="width: 450px; margin: 0px 8px 8px 0px;">\
+					<h2>Montco:</h2>\
+					<span>\
+						<a href="https://connect.mc3.edu/" target="_blank" title="Montco Connect"><img src="https://lh3.googleusercontent.com/-4VkGlxHdgmE07yc8m1CyFU5RTUKh48RXzrki5w8S6VSjc-62Sw-j-1y9j4SdcX23yPO=s180-rw" width=100 height=100 alt="Montco Connect"></a>\
+						<a href="https://drive.google.com/drive/u/?authuser=athomas7388@students.mc3.edu" target="_blank" title="Google Drive"><img src="https://lh3.googleusercontent.com/A-jk5o_CT_ucUdRRwmchoeMx1qoKolfGKFptEBHANKZELMmeJALE7m4KOZdDu0NjFNiekH0j2T981f5N_nZ_IU1HsRehKLPRQAX0=h120" width=100 height=100 alt="Google Drive"></a>\
+						<a href="https://mail.google.com/mail/u/?authuser=athomas7388@students.mc3.edu" target="_blank" title="Gmail"><img src="https://lh3.googleusercontent.com/86N90L0IJ785jaRXwXX0UAycK5MZQ3fTJRaIjgvF2PVJqjw5NkVequXgELwIEAnJG0SRxVUSaa5_Yw1_wW3LrxAN4oNZ8VCoeQuddmI=h120" width=100 height=100 alt="Gmail"></a>\
+					</span>\
+				</div>\
+				<div style="width: 494.736842105px; margin: 0px 8px 8px 0px;">\
+					<h2>College Prep:</h2>\
+					<span>\
+						<a href="https://accounts.google.com/o/saml2/initsso?idpid=C01p8vbki&spid=470862358434&forceauthn=false" target="_blank" title="Naviance"><img src="https://pbs.twimg.com/profile_images/1254871482737491968/NtgcfFEv_400x400.png" width=100 height=100 alt="Naviance"></a>\
+						<a href="https://www.collegeboard.org/" target="_blank" title="College Board"><img src="https://pbs.twimg.com/profile_images/826105112011665408/zCyFRC8I_400x400.jpg" width=100 height=100 alt="College Board"></a>\
+						<a href="https://www.niche.com/" target="_blank" title="Niche"><img src="https://scontent.fphl2-4.fna.fbcdn.net/v/t1.0-9/56608926_10156308670357749_1444341572580671488_n.png?_nc_cat=1&_nc_sid=85a577&_nc_ohc=FBXDXugsmqUAX_1zZe5&_nc_ht=scontent.fphl2-4.fna&oh=cfc0252b636c76cb36df9ae3338c80e3&oe=5F6F8B97" width=100 height=100 alt="Niche"></a>\
+					</span>\
+				</div>\
+				<div style="width: 307.999999998px; margin: 0px 8px 8px 0px;">\
+					<h2>Test Prep:</h2>\
+					<span>\
+						<a href="https://www.khanacademy.org/mission/sat" target="_blank" title="SAT Prep"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/sat.png" width=157.999999998 height=100 alt="SAT Prep"></a>\
+					</span>\
+				</div>\
+				<div style="width: 450px; margin: 0px 8px 8px 0px;">\
+					<h2>Scholarships:</h2>\
+					<span>\
+						<a href="https://www.fastweb.com/" target="_blank" title="Fastweb"><img src="https://lh3.googleusercontent.com/mASZO0YvSLYzJCY1Bb5MB-a2iO6zW6fXSa-bgIE0aXuzMneVJDqhT4icdJAdckWVhFzu=s180-rw" width=100 height=100 alt="Fastweb"></a>\
+						<a href="https://www.scholarships.com/" target="_blank" title="Scholarships.com"><img src="https://lh3.googleusercontent.com/9S5sLr4y-5vRwDQ943aX1wnDYZA-HKT6vHRrjm7kXxhZfxsE6VYIhPX79lNy16mhuHw=s180-rw" width=100 height=100 alt="Scholarships.com"></a>\
+						<a href="https://www.cappex.com/scholarships" target="_blank" title="Cappex"><img src="https://pbs.twimg.com/profile_images/1241088771002638337/xuXdZN2A_400x400.png" id="dCapp" width=100 height=100 alt="Cappex"></a>\
+					</span>\
+				</div>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/home.svg" id="dHome" width="24" height="24">Personal</a>\
+				<a href="page2.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
+				<a href="page3.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/college.svg" id="dColl" width="24" height="24">College</a>\
+				<a href="page4.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/money.svg" id="dMon" width="24" height="24">Money</a>\
+				<a href="page5.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen" width="24" height="24">Agenda</a>\
+				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" width="24" height="24">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+					<nav id="accOpt">\
+						<p>Welcome to your Locker, Ashwin Thomas!</p>\
+						<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+					</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+			} else if(localStorage.getItem("user") == "demo"){
+				window.location.replace("home.html");
+			} else if(localStorage.getItem("user") == "lmtsd"){
+				$("title").html("Murray Ave — OneLocker");
+				$("#content").html('\
+				<h1>Murray Ave</h1>\
+				<div style="width: 682.604735881px; margin: 0px 8px 8px 0px;">\
+					<h2>Textbooks:</h2>\
+					<span>\
+						<a href="https://wayf.rumba.pk12ls.com/wayf/?service=https://www.savvasrealize.com" target="_blank" title="Savvas Realize (Formerly Pearson Realize)"><img src="https://media-exp1.licdn.com/dms/image/C4D0BAQEMR68Z6LCPEg/company-logo_200_200/0?e=2159024400&v=beta&t=EHibD-PK0HAuw6UHfFgUBhgFxwDkUZ7jh9a-GuxSN0k" width=100 height=100 alt="Savvas Realize (Formerly Pearson Realize)"></a>\
+						<a href="https://my.hrw.com/sp/access?sp=hrw&connection=lmtsd-org" target="_blank" title="MY HRW"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/hrw.png" width=155.555555555 height=100 alt="MY HRW"></a>\
+						<a href="https://www.hmhco.com/api/external-sso/access?sp=ed&connection=lmtsd-org" target="_blank" title="Ed, Your Friend in Learning"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/ed.png" width=177.049180326 height=100 alt="Ed, Your Friend in Learning"></a>\
+						<a href="https://passport.carnegielearning.com/" target="_blank" title="Carnegie Learning (Formerly EMC Passport)"><img src="https://i.vimeocdn.com/portrait/18191102_300x300.webp" width=100 height=100 alt="Carnegie Learning (Formerly EMC Passport)"></a>\
+					</span>\
+				</div>\
+				<div style="width: 476.744186046px; margin: 0px 8px 8px 0px;">\
+					<h2>Online Resources:</h2>\
+					<span>\
+						<a href="http://safari.lmtsd.org/" target="_blank" title="SAFARI Montage"><img src="https://pbs.twimg.com/profile_images/890279088941920256/bOBWjDEL_400x400.jpg" id="dSafarl" width=100 height=100 alt="SAFARI Montage"></a>\
+						<a href="https://sites.google.com/view/murrayavenuelibrary" target="_blank" title="Murray Ave Library"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/MALibrary.png" width=126.744186046 height=100 alt="Murray Ave Library"></a>\
+						<a href="https://www.lmtsd.org/site/handlers/filedownload.ashx?moduleinstanceid=13543&dataid=28685&FileName=MAS%20Bell%20Schedule%202020-21%20-%20Sheet1.pdf" target="_blank" title="Bell Schedules"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/schedule.svg" id="dSched" width=100 height=100 alt="Bell Schedules"></a>\
+					</span>\
+				</div>\
+				');
+				$("#siteNav").html('\
+				<a href="page1.html"><img src="https://i.vimeocdn.com/portrait/3663763_300x300" width="30" height="30">District</a>\
+				<a href="page2.html"><img src="https://www.lmtsd.org/cms/lib/PA01000427/Centricity/Domain/365/PineRoad_logo.png" width="39.64757709" height="30">Pine Road</a>\
+				<a href="page3.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/murrayAve.png" width="45.2873563196" height="30">Murray Ave</a>\
+				<a href="page4.html"><img src="https://schoolassets.s3.amazonaws.com/logos/2041/2041.gif" width="30" height="30">LMHS</a>\
+				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" height="30">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
+				<nav id="accOpt">\
+					<p>Welcome to your Locker, LMTSD Students!</p>\
+					<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+				</nav>\
+				');
+				$("#accOpt").hide();
+				$("#account").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#account").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$("#accOpt").on("mouseover", function(e){
+					e.preventDefault();
+					$("#accOpt").show();
+				});
+				$("#accOpt").on("mouseout", function(e){
+					e.preventDefault();
+					$("#accOpt").hide();
+				});
+				$(".logout").on("click", function(e){
+					e.preventDefault();
+					localStorage.clear();
+					window.location.href="login.html";
+				});
+			};
+			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
+			darkImg(isDark);
+			isDark.addListener(darkImg);
+		</script>
+	</body>
+</html>
