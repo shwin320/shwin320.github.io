@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<header>
-			<a href="home.html">
+			<a href="/OneLocker/">
 				<table>
 					<tbody>
 						<tr>
@@ -35,7 +35,7 @@
 			<p style="position: absolute; top: 0px; left: 8px; margin: 0px;">Copyright © 2020 Ashwin Thomas. All Rights Reserved.</p>
 			<nav style="position: absolute; top: 0px; right: 8px;">
 				<a href="https://goo.gl/forms/BKejH4liidhVoJaC3" target="_blank">Sign-up</a>
-				<a href="login.html" class="logout">Logout</a>
+				<a href="/OneLocker/login" class="logout">Logout</a>
 				<a href="mailto:shwin320@gmail.com?subject=OneLocker Help Request" target="_blank">Get Help</a>
 			</nav>
 		</footer>
@@ -43,7 +43,7 @@
 		<script src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@54b5c5a/Dark%20Mode.js"></script>
 		<script>
 			if(localStorage.getItem("user") != "shwin17MAGD" && localStorage.getItem("user") != "demo" && localStorage.getItem("user") != "lmtsd"){
-				window.location.replace("login.html");
+				window.location.replace("/OneLocker/login");
 			} else if(localStorage.getItem("user") == "shwin17MAGD"){
 				$("title").html("Money — OneLocker");
 				$("#content").html('\
@@ -84,15 +84,15 @@
 				</div>\
 				');
 				$("#siteNav").html('\
-				<a href="page1.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/home.svg" id="dHome" width="24" height="24">Personal</a>\
-				<a href="page2.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
-				<a href="page3.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/college.svg" id="dColl" width="24" height="24">College</a>\
-				<a href="page4.html" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/money.svg" id="dMon" width="24" height="24">Money</a>\
-				<a href="page5.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen" width="24" height="24">Agenda</a>\
+				<a href="/OneLocker/page1"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/home.svg" id="dHome" width="24" height="24">Personal</a>\
+				<a href="/OneLocker/page2"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/school.svg" id="dSchoo" width="24" height="24">School</a>\
+				<a href="/OneLocker/page3"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/college.svg" id="dColl" width="24" height="24">College</a>\
+				<a href="/OneLocker/page4" id="active"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/money.svg" id="dMon" width="24" height="24">Money</a>\
+				<a href="/OneLocker/page5"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/agenda.svg" id="dAgen" width="24" height="24">Agenda</a>\
 				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" width="24" height="24">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
 					<nav id="accOpt">\
 						<p>Welcome to your Locker, Ashwin Thomas!</p>\
-						<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+						<a href="/OneLocker/login" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
 					</nav>\
 				');
 				$("#accOpt").hide();
@@ -115,10 +115,10 @@
 				$(".logout").on("click", function(e){
 					e.preventDefault();
 					localStorage.clear();
-					window.location.href="login.html";
+					window.location.href="/OneLocker/login";
 				});
 			} else if(localStorage.getItem("user") == "demo"){
-				window.location.replace("home.html");
+				window.location.replace("/OneLocker/");
 			} else if(localStorage.getItem("user") == "lmtsd"){
 				$("title").html("LMHS — OneLocker");
 				$("#content").html('\
@@ -141,14 +141,14 @@
 				</div>\
 				');
 				$("#siteNav").html('\
-				<a href="page1.html"><img src="https://i.vimeocdn.com/portrait/3663763_300x300" width="30" height="30">District</a>\
-				<a href="page2.html"><img src="https://www.lmtsd.org/cms/lib/PA01000427/Centricity/Domain/365/PineRoad_logo.png" width="39.64757709" height="30">Pine Road</a>\
-				<a href="page3.html"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/murrayAve.png" width="45.2873563196" height="30">Murray Ave</a>\
-				<a href="page4.html" id="active"><img src="https://schoolassets.s3.amazonaws.com/logos/2041/2041.gif" width="30" height="30">LMHS</a>\
+				<a href="/OneLocker/page1"><img src="https://i.vimeocdn.com/portrait/3663763_300x300" width="30" height="30">District</a>\
+				<a href="/OneLocker/page2"><img src="https://www.lmtsd.org/cms/lib/PA01000427/Centricity/Domain/365/PineRoad_logo.png" width="39.64757709" height="30">Pine Road</a>\
+				<a href="/OneLocker/page3"><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/murrayAve.png" width="45.2873563196" height="30">Murray Ave</a>\
+				<a href="/OneLocker/page4" id="active"><img src="https://schoolassets.s3.amazonaws.com/logos/2041/2041.gif" width="30" height="30">LMHS</a>\
 				<a id="account"><span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/account.svg" id="dAcc" height="30">Account</span><img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/dropDown.svg" id="dDrop" height="18" style="display: inline-block; margin: 0px;"></a>\
 				<nav id="accOpt">\
 					<p>Welcome to your Locker, LMTSD Students!</p>\
-					<a href="login.html" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
+					<a href="/OneLocker/login" style="border-top: 1px solid #5f6368" class="logout">Logout</a>\
 				</nav>\
 				');
 				$("#accOpt").hide();
@@ -171,7 +171,7 @@
 				$(".logout").on("click", function(e){
 					e.preventDefault();
 					localStorage.clear();
-					window.location.href="login.html";
+					window.location.href="/OneLocker/login";
 				});
 			};
 			var isDark = window.matchMedia("(prefers-color-scheme: dark)");
