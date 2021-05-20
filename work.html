@@ -31,6 +31,12 @@
 		width: 69.875px;
 		right: 8px;
 	}
+	#scroll{
+		height: 20px;
+	}
+	.end{
+		margin-bottom: 65px;
+	}
 	</style>
 </head>
 <body>
@@ -56,7 +62,7 @@
 	<div class="under" id="achieve"></div>
 	<div class="under" id="work"></div>
 </div>
-<div id="top" class="work">
+<div id="top" class="work end">
 <table>
 	<tr>
 		<td><a href="https://sites.google.com/lmtsd.org/at-eportfolio" target="_blank"><img src="https://cdn.jsdelivr.net/gh/shwin320/Ashwin-Website@d4548ff/Ashwin's ePortfolio.jpg" id="eport" alt="Ashwin's ePortfolio"></a></td>
@@ -118,6 +124,13 @@ navw.addEventListener("mouseout", nunderwork);
 */
 darkImgWork(dark);
 dark.addListener(darkImgWork);
+window.onscroll = function(){
+	if(document.body.scrollTop > 1 || document.documentElement.scrollTop > 1){
+		document.getElementById("scroll").style.display = "block";
+	} else{
+		document.getElementById("scroll").style.display = "none";
+	};
+};
 </script>
 </body>
 </html>
