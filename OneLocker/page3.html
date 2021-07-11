@@ -193,19 +193,33 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
+<!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCJq6RpI3rdxW__WVALbw5c0nWGE-akdAE",
-    authDomain: "onelocker-432f9.firebaseapp.com",
-    databaseURL: "https://onelocker-432f9-default-rtdb.firebaseio.com",
-    projectId: "onelocker-432f9",
-    storageBucket: "onelocker-432f9.appspot.com",
-    messagingSenderId: "1099368824930",
-    appId: "1:1099368824930:web:655128e95ad7f9504a513b"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+    var firebaseConfig = {
+  	apiKey: "AIzaSyCJq6RpI3rdxW__WVALbw5c0nWGE-akdAE",
+  	authDomain: "onelocker-432f9.firebaseapp.com",
+  	databaseURL: "https://onelocker-432f9-default-rtdb.firebaseio.com",
+  	projectId: "onelocker-432f9",
+ 	storageBucket: "onelocker-432f9.appspot.com",
+ 	messagingSenderId: "1099368824930",
+	appId: "1:1099368824930:web:655128e95ad7f9504a513b"
+    };
+    var config = {
+   	apiKey: "AIzaSyCJq6RpI3rdxW__WVALbw5c0nWGE-akdAE",
+  	authDomain: "onelocker-432f9.firebaseapp.com",
+    	// For databases not in the us-central1 location, databaseURL will be of the
+   	// form https://[databaseName].[region].firebasedatabase.app.
+  	// For example, https://your-database-123.europe-west1.firebasedatabase.app
+  	databaseURL: "https://onelocker-432f9-default-rtdb.firebaseio.com",
+  	storageBucket: "onelocker-432f9.appspot.com"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    // Get a reference to the database service
+    var database = firebase.database();
 </script>
 	</body>
 </html>
