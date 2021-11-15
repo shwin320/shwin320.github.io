@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<link data-react-helmet="true" rel="icon" href="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/SRC.ico">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@9e62c83/style.css" rel="stylesheet">
+		<title>straight from the src</title>
+	</head>
+	<body data-gr-c-s-loaded="true" onload="startup()">
+		<img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/logo.png" style="width: 65vw;" alt="straight from the src">
+		<br><br>
+		<div id="inter">
+			<span id="contain"><video id="media"></video></span><br>
+			<span id="controls">
+				<span id="timeline"></span>
+				<div id="prog"></div>
+				<span id="buttons">
+					<span>
+						<button id="back"><img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/replay.svg" alt="Replay 10s" title="Replay" width="35"></button>
+						<button id="play"><img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/play.svg" alt="Play" title="Play" width="35"></button>
+						<button id="skip"><img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/skip.svg" alt="Skip 10s" title="Skip" width="35"></button>
+					</span>
+					<span>
+						<button id="reap"><img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/repeat-no.svg" alt="Don't Repeat" title="Don't Repeat" width="35"></button>
+						<button id="full"><img src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@641a2e7/full.svg" alt="Fullscreen" title="Fullscreen" width=35></button>
+					</span>
+				</span>
+			</span>
+		</div>
+		<div id="selector">
+			<form id="select" style="left: 8px; bottom: 8px;">
+				<label class="title">Play from SRC</label><br>
+				<input type="text" placeholder="Enter src URL of media file" id="URL" style="width: 266px;"><br>
+				<label>Select Media Type:</label>
+				<select id="type">
+					<option value="v">Video</option>
+					<option value="a">Audio</option>
+					<option value="p">Photo</option>
+				</select><br>
+				<input type="submit" value="Open">
+			</form>
+			<div>
+				<form id="playlist" style="left: 8px; bottom: 8px;">
+					<label class="title">Saved SRCs</label><br>
+					<select id="playOps">
+						<option value="SAVE">-Save</option>
+						<option value="DELETE">-Delete</option>
+					</select><br>
+					<input type="submit" value="Select">
+				</form>
+				<form id="save" style="left: 8px; bottom: 8px;">
+					<label class="title">Save New SRC</label><br>
+					<input type="text" placeholder="Enter name of media file" id="songTitle" style="width: 266px;"><br>
+					<input type="text" placeholder="Enter src URL of media file" id="newURL" style="width: 266px;"><br>
+					<label>Select Media Type:</label>
+					<select id="newType">
+						<option value="v">Video</option>
+						<option value="a">Audio</option>
+						<option value="p">Photo</option>
+					</select><br>
+					<input type="submit" value="Save">
+				</form>
+				<form id="delete" style="left: 8px; bottom: 8px;">
+					<label class="title">Delete SRC</label><br>
+					<select id="songDelete">
+					</select><br>
+					<input type="submit" value="Delete">
+				</form>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/shwin320/straight-from-the-src@3715a2c/SRC.js"></script>
+	</body>
+</html>
