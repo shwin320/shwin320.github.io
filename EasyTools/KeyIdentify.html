@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KeyIdentify</title>
+	<link href="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/password.svg" rel="icon">
+    <style>
+        body{
+			font-family: monospace;
+        }
+		h1{
+			font-size: 2.75em;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+        p{
+        	font-size: 20px;
+        }
+		span{
+			position: relative;
+			height: 2.75em;
+			display: block;
+		}
+		span *{
+			display: inline-block;
+			position: absolute;
+			bottom: 0px;
+		}
+    </style>
+  </head>
+  <body>
+	<span>
+		<img src="https://cdn.jsdelivr.net/gh/shwin320/OneLocker@f9a14c5/password.svg" height="42" style="left: 0px;">
+		<h1 style="left: 50px;">KeyIdentify</h1>
+	</span>
+    <p>Press a key on the keyboard, get its keyCode.</p>
+
+    <p id="key"></p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+      $("body").on("keydown", function(e){
+      	  e.preventDefault();
+          var key = e.keyCode;
+          $("#key").text("The keyCode is "+key+".");
+      });
+    </script>
+  </body>
+</html>
